@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "CosmosArcadeCpp",
+			"Path": "C:\\Users\\79997\\Unreal Engine\\Projects\\CosmosArcadeC++\\CosmosArcadeCpp\\Source\\CosmosArcadeCpp.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "CosmosArcadeCppEditor",
+			"Path": "C:\\Users\\79997\\Unreal Engine\\Projects\\CosmosArcadeC++\\CosmosArcadeCpp\\Source\\CosmosArcadeCppEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

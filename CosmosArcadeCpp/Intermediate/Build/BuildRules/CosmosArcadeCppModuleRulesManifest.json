@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\79997\\Unreal Engine\\Projects\\CosmosArcadeC++\\CosmosArcadeCpp\\Source\\CosmosArcadeCpp\\CosmosArcadeCpp.Build.cs",
+		"C:\\Users\\79997\\Unreal Engine\\Projects\\CosmosArcadeC++\\CosmosArcadeCpp\\Source\\CosmosArcadeCpp.Target.cs",
+		"C:\\Users\\79997\\Unreal Engine\\Projects\\CosmosArcadeC++\\CosmosArcadeCpp\\Source\\CosmosArcadeCppEditor.Target.cs"
+	],
+	"EngineVersion": "4.26.2"
+}
