@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeCosmosArcadeCpp_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x6FF5C370,
+				0xA5C3733E,
 				0x7EFCC894,
 				METADATA_PARAMS(nullptr, 0)
 			};
