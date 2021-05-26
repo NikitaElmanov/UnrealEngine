@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeCosmosArcadeCpp_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xA5C3733E,
-				0x7EFCC894,
+				0xDE6E27C0,
+				0x2514A7CE,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

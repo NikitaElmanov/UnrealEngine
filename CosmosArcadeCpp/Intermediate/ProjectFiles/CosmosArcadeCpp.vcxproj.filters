@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\CosmosArcadeCpp.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{B4B57BD2-444B-46E4-93E5-3CC2A7C463DD}</UniqueIdentifier>
+      <UniqueIdentifier>{3B5FB8EC-78E5-4481-97B3-8E6F68CA4215}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CosmosArcadeCpp.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{F81FA16B-852B-4758-BD2F-2D190E48B4C5}</UniqueIdentifier>
+      <UniqueIdentifier>{DE078638-0DA8-4F05-81D0-65089BC405F4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -26,8 +26,11 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Source\CosmosArcadeCpp">
-      <UniqueIdentifier>{B0F514D9-3D18-4C0B-879D-046FC4E9DAEC}</UniqueIdentifier>
+      <UniqueIdentifier>{38C16AAC-0D37-4BC1-87EC-963489792D1D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CosmosArcadeCpp\CosmosArcadeCpp.Build.cs">
       <Filter>Source\CosmosArcadeCpp</Filter>
@@ -48,6 +51,12 @@
       <Filter>Source\CosmosArcadeCpp</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\CosmosArcadeCpp\PlayerPawn.h">
+      <Filter>Source\CosmosArcadeCpp</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CosmosArcadeCpp\ShootComponent.cpp">
+      <Filter>Source\CosmosArcadeCpp</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CosmosArcadeCpp\ShootComponent.h">
       <Filter>Source\CosmosArcadeCpp</Filter>
     </ClInclude>
   </ItemGroup>

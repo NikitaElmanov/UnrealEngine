@@ -32,6 +32,7 @@ protected:
 
 	void onTouchPress(ETouchIndex::Type index, FVector touchLocation);
 	void onTouchRelease(ETouchIndex::Type index, FVector touchLocation);
+	void onTouchMove(ETouchIndex::Type index, FVector touchLocation);
 
 public:	
 	// Called every frame
@@ -47,9 +48,8 @@ public:
 	UStaticMeshComponent* pawnMesh;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
-	USpringArmComponent* cameraSpringArm;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
 	UCameraComponent* pawnCamera;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Controls")
+	float touchMoveSensitivity;
 };
