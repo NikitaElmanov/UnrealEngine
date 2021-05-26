@@ -1,11 +1,10 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
 #include "Components/BoxComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "ShootComponent.h"
 #include "Camera/CameraComponent.h"
 
 #include "PlayerPawn.generated.h"
@@ -49,6 +48,9 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pawn")
 	UCameraComponent* pawnCamera;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Shooting")
+	UShootComponent* shootComponent;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Controls")
 	float touchMoveSensitivity;

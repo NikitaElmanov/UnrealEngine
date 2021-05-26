@@ -1,3 +1,9 @@
 C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Development\CosmosArcadeCpp\Definitions.CosmosArcadeCpp.h
 C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Source\CosmosArcadeCpp\ShootComponent.h
+C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Source\CosmosArcadeCpp\Actors/Projectiles/ShootProjectile.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/SphereComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SphereComponent.generated.h
+C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Inc\CosmosArcadeCpp\ShootProjectile.generated.h
 C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Inc\CosmosArcadeCpp\ShootComponent.generated.h

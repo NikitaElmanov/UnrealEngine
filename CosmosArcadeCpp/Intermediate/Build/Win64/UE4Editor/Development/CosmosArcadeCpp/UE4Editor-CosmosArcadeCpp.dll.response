@@ -34,6 +34,7 @@
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN
 "C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\CosmosArcadeCppEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Development\CosmosArcadeCpp\ShootProjectile.cpp.obj"
 "C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Development\CosmosArcadeCpp\CosmosArcadeCpp.cpp.obj"
 "C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Development\CosmosArcadeCpp\CosmosArcadeCppGameModeBase.cpp.obj"
 "C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Development\CosmosArcadeCpp\PlayerPawn.cpp.obj"
@@ -42,6 +43,7 @@
 "C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Development\CosmosArcadeCpp\CosmosArcadeCppGameModeBase.gen.cpp.obj"
 "C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Development\CosmosArcadeCpp\PlayerPawn.gen.cpp.obj"
 "C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Development\CosmosArcadeCpp\ShootComponent.gen.cpp.obj"
+"C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Development\CosmosArcadeCpp\ShootProjectile.gen.cpp.obj"
 "C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Development\CosmosArcadeCpp\Default.rc2.res"
 "C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\UE4Editor-Engine.lib"
 "C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"

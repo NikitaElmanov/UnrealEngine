@@ -17,6 +17,9 @@ APlayerPawn::APlayerPawn()
 	pawnMesh->SetupAttachment(RootComponent);
 
 	pawnCamera = CreateAbstractDefaultSubobject<UCameraComponent>(TEXT("PawnCamera"));
+
+	shootComponent = CreateAbstractDefaultSubobject<UShootComponent>(TEXT("ShootComponent"));
+
 }
 
 // Called when the game starts or when spawned
@@ -57,6 +60,6 @@ void APlayerPawn::onTouchMove(ETouchIndex::Type index, FVector touchLocation)
 void APlayerPawn::onTouchPress(ETouchIndex::Type index, FVector touchLocation)
 {
 	currentTouchLocation = FVector2D(touchLocation);
-	UE_LOG(LogTemp, Log, TEXT("currentTouchLocation - %f - %f"), currentTouchLocation.X, currentTouchLocation.Y);
+	//UE_LOG(LogTemp, Log, TEXT("currentTouchLocation - %f - %f"), currentTouchLocation.X, currentTouchLocation.Y);
 	touching = true;
 }

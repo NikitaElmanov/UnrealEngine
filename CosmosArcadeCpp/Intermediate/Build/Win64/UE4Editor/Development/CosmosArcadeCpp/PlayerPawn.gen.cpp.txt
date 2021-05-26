@@ -8,6 +8,12 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/SpringArmComponent.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpringArmComponent.generated.h
+C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Source\CosmosArcadeCpp\ShootComponent.h
+C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Source\CosmosArcadeCpp\Actors/Projectiles/ShootProjectile.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/SphereComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SphereComponent.generated.h
+C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Inc\CosmosArcadeCpp\ShootProjectile.generated.h
+C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Inc\CosmosArcadeCpp\ShootComponent.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
 C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Inc\CosmosArcadeCpp\PlayerPawn.generated.h

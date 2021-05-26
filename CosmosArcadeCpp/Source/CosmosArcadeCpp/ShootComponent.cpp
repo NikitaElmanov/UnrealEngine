@@ -3,14 +3,14 @@
 
 #include "ShootComponent.h"
 #include "Engine/World.h"
-#include "TimeManager.h"
+#include "TimerManager.h"
 
 // Sets default values for this component's properties
 UShootComponent::UShootComponent()
+	:
+	shootPeriod(1.f)
 {
-	
 
-	
 }
 
 
@@ -25,6 +25,14 @@ void UShootComponent::BeginPlay()
 
 void UShootComponent::shoot()
 {
+	//UE_LOG(LogTemp, Log, TEXT("Shoot"));
+
+	FActorSpawnParameters spawnParameters;
+
+	FTransform spawnTransform;
+	spawnTransform.SetLocation(GetOwner()->GetActorLocation());
+
+	GetWorld()->SpawnActor<AShootProjectile>(projectileClass, spawnTransform, spawnParameters);
 }
 
 void UShootComponent::startShooting()
