@@ -75,3 +75,10 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+git rm --cached .gitignore
+git rm -r --cached "Intermediate/Build/Unused/"
+git rm -r --cached "Saved/Logs/"
+#git rm -r --cached "CosmosArcadeCpp/Intermediate/Build/Unused/"
+#git rm -r --cached "CosmosArcadeCpp/Saved/Logs/"
+
