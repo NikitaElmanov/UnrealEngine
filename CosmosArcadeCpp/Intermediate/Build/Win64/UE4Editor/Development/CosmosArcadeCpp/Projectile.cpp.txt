@@ -1,3 +1,0 @@
-C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Development\CosmosArcadeCpp\Definitions.CosmosArcadeCpp.h
-C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Source\CosmosArcadeCpp\Actors\Projectiles\Projectile.h
-C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Inc\CosmosArcadeCpp\Projectile.generated.h

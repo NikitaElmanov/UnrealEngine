@@ -13,13 +13,123 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeShootComponent() {}
 // Cross Module References
-	COSMOSARCADECPP_API UClass* Z_Construct_UClass_UShootComponent_NoRegister();
-	COSMOSARCADECPP_API UClass* Z_Construct_UClass_UShootComponent();
-	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
+	COSMOSARCADECPP_API UScriptStruct* Z_Construct_UScriptStruct_FShootInfo();
 	UPackage* Z_Construct_UPackage__Script_CosmosArcadeCpp();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	COSMOSARCADECPP_API UClass* Z_Construct_UClass_AShootProjectile_NoRegister();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	COSMOSARCADECPP_API UClass* Z_Construct_UClass_UShootComponent_NoRegister();
+	COSMOSARCADECPP_API UClass* Z_Construct_UClass_UShootComponent();
+	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 // End Cross Module References
+class UScriptStruct* FShootInfo::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern COSMOSARCADECPP_API uint32 Get_Z_Construct_UScriptStruct_FShootInfo_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FShootInfo, Z_Construct_UPackage__Script_CosmosArcadeCpp(), TEXT("ShootInfo"), sizeof(FShootInfo), Get_Z_Construct_UScriptStruct_FShootInfo_Hash());
+	}
+	return Singleton;
+}
+template<> COSMOSARCADECPP_API UScriptStruct* StaticStruct<FShootInfo>()
+{
+	return FShootInfo::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FShootInfo(FShootInfo::StaticStruct, TEXT("/Script/CosmosArcadeCpp"), TEXT("ShootInfo"), false, nullptr, nullptr);
+static struct FScriptStruct_CosmosArcadeCpp_StaticRegisterNativesFShootInfo
+{
+	FScriptStruct_CosmosArcadeCpp_StaticRegisterNativesFShootInfo()
+	{
+		UScriptStruct::DeferCppStructOps(FName(TEXT("ShootInfo")),new UScriptStruct::TCppStructOps<FShootInfo>);
+	}
+} ScriptStruct_CosmosArcadeCpp_StaticRegisterNativesFShootInfo;
+	struct Z_Construct_UScriptStruct_FShootInfo_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_projectileClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_projectileClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_offset_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_offset;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_angle_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_angle;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FShootInfo_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "ShootComponent.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FShootInfo_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FShootInfo>();
+	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_projectileClass_MetaData[] = {
+		{ "Category", "Shooting" },
+		{ "ModuleRelativePath", "ShootComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_projectileClass = { "projectileClass", nullptr, (EPropertyFlags)0x0014000000000015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FShootInfo, projectileClass), Z_Construct_UClass_AShootProjectile_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_projectileClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_projectileClass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_offset_MetaData[] = {
+		{ "Category", "Shooting" },
+		{ "ModuleRelativePath", "ShootComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_offset = { "offset", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FShootInfo, offset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_offset_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_offset_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_angle_MetaData[] = {
+		{ "Category", "Shooting" },
+		{ "ModuleRelativePath", "ShootComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_angle = { "angle", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FShootInfo, angle), METADATA_PARAMS(Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_angle_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_angle_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FShootInfo_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_projectileClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_offset,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_angle,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FShootInfo_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_CosmosArcadeCpp,
+		nullptr,
+		&NewStructOps,
+		"ShootInfo",
+		sizeof(FShootInfo),
+		alignof(FShootInfo),
+		Z_Construct_UScriptStruct_FShootInfo_Statics::PropPointers,
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FShootInfo_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FShootInfo_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FShootInfo_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FShootInfo()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FShootInfo_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_CosmosArcadeCpp();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("ShootInfo"), sizeof(FShootInfo), Get_Z_Construct_UScriptStruct_FShootInfo_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FShootInfo_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FShootInfo_Hash() { return 3328672599U; }
 	DEFINE_FUNCTION(UShootComponent::execstopShooting)
 	{
 		P_FINISH;
@@ -104,10 +214,11 @@ void EmptyLinkFunctionForGeneratedCodeShootComponent() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_shootPeriod_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_shootPeriod;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_shootInfos_Inner;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_projectileClass_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_shootInfos_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_projectileClass;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_shootInfos;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -135,16 +246,18 @@ void EmptyLinkFunctionForGeneratedCodeShootComponent() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UShootComponent_Statics::NewProp_shootPeriod = { "shootPeriod", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UShootComponent, shootPeriod), METADATA_PARAMS(Z_Construct_UClass_UShootComponent_Statics::NewProp_shootPeriod_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UShootComponent_Statics::NewProp_shootPeriod_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UShootComponent_Statics::NewProp_shootInfos_Inner = { "shootInfos", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FShootInfo, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UShootComponent_Statics::NewProp_projectileClass_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UShootComponent_Statics::NewProp_shootInfos_MetaData[] = {
 		{ "Category", "Shooting" },
 		{ "ModuleRelativePath", "ShootComponent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UShootComponent_Statics::NewProp_projectileClass = { "projectileClass", nullptr, (EPropertyFlags)0x0014000000000015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UShootComponent, projectileClass), Z_Construct_UClass_AShootProjectile_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UShootComponent_Statics::NewProp_projectileClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UShootComponent_Statics::NewProp_projectileClass_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UShootComponent_Statics::NewProp_shootInfos = { "shootInfos", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UShootComponent, shootInfos), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UShootComponent_Statics::NewProp_shootInfos_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UShootComponent_Statics::NewProp_shootInfos_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UShootComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UShootComponent_Statics::NewProp_shootPeriod,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UShootComponent_Statics::NewProp_projectileClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UShootComponent_Statics::NewProp_shootInfos_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UShootComponent_Statics::NewProp_shootInfos,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UShootComponent_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UShootComponent>::IsAbstract,
@@ -173,7 +286,7 @@ void EmptyLinkFunctionForGeneratedCodeShootComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UShootComponent, 1266645391);
+	IMPLEMENT_CLASS(UShootComponent, 1330481853);
 	template<> COSMOSARCADECPP_API UClass* StaticClass<UShootComponent>()
 	{
 		return UShootComponent::StaticClass();

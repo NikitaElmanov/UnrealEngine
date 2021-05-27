@@ -3,3 +3,6 @@
 
 #include "CosmosArcadeCppGameModeBase.h"
 
+ACosmosArcadeCppGameModeBase::ACosmosArcadeCppGameModeBase() {
+	enemySpawnController = CreateDefaultSubobject<UEnemySpawnController>(TEXT("EnemySpawnController"));
+}

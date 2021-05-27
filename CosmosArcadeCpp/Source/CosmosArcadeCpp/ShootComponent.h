@@ -6,6 +6,21 @@
 #include "ShootComponent.generated.h"
 
 
+USTRUCT(BlueprintType)
+struct FShootInfo
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shooting")
+	TSubclassOf<AShootProjectile> projectileClass;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
+	FVector offset;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
+	float angle;
+};
+
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class COSMOSARCADECPP_API UShootComponent : public UActorComponent
 {
@@ -35,6 +50,6 @@ public:
 	float shootPeriod;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shooting")
-	TSubclassOf<AShootProjectile> projectileClass;
+	TArray<FShootInfo> shootInfos;
 		
 };

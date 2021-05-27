@@ -3,6 +3,8 @@
 
 // Sets default values
 AShootProjectile::AShootProjectile()
+	:
+	projectileSpeed(1000.f)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -27,5 +29,6 @@ void AShootProjectile::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	AddActorLocalOffset(FVector(projectileSpeed * DeltaTime, 0.f, 0.f));
 }
 

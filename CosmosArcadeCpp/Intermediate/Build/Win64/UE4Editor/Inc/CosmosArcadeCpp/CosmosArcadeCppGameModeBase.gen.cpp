@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeCosmosArcadeCppGameModeBase() {}
 	COSMOSARCADECPP_API UClass* Z_Construct_UClass_ACosmosArcadeCppGameModeBase();
 	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
 	UPackage* Z_Construct_UPackage__Script_CosmosArcadeCpp();
+	COSMOSARCADECPP_API UClass* Z_Construct_UClass_UEnemySpawnController_NoRegister();
 // End Cross Module References
 	void ACosmosArcadeCppGameModeBase::StaticRegisterNativesACosmosArcadeCppGameModeBase()
 	{
@@ -31,6 +32,11 @@ void EmptyLinkFunctionForGeneratedCodeCosmosArcadeCppGameModeBase() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_enemySpawnController_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_enemySpawnController;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -47,6 +53,17 @@ void EmptyLinkFunctionForGeneratedCodeCosmosArcadeCppGameModeBase() {}
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACosmosArcadeCppGameModeBase_Statics::NewProp_enemySpawnController_MetaData[] = {
+		{ "Category", "Enemies" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "CosmosArcadeCppGameModeBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACosmosArcadeCppGameModeBase_Statics::NewProp_enemySpawnController = { "enemySpawnController", nullptr, (EPropertyFlags)0x001000000008001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACosmosArcadeCppGameModeBase, enemySpawnController), Z_Construct_UClass_UEnemySpawnController_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ACosmosArcadeCppGameModeBase_Statics::NewProp_enemySpawnController_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACosmosArcadeCppGameModeBase_Statics::NewProp_enemySpawnController_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACosmosArcadeCppGameModeBase_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACosmosArcadeCppGameModeBase_Statics::NewProp_enemySpawnController,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ACosmosArcadeCppGameModeBase_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ACosmosArcadeCppGameModeBase>::IsAbstract,
 	};
@@ -56,11 +73,11 @@ void EmptyLinkFunctionForGeneratedCodeCosmosArcadeCppGameModeBase() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_ACosmosArcadeCppGameModeBase_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_ACosmosArcadeCppGameModeBase_Statics::PropPointers),
 		0,
 		0x009002ACu,
 		METADATA_PARAMS(Z_Construct_UClass_ACosmosArcadeCppGameModeBase_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ACosmosArcadeCppGameModeBase_Statics::Class_MetaDataParams))
@@ -74,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeCosmosArcadeCppGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACosmosArcadeCppGameModeBase, 3650947255);
+	IMPLEMENT_CLASS(ACosmosArcadeCppGameModeBase, 402030521);
 	template<> COSMOSARCADECPP_API UClass* StaticClass<ACosmosArcadeCppGameModeBase>()
 	{
 		return ACosmosArcadeCppGameModeBase::StaticClass();

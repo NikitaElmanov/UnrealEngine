@@ -41,6 +41,10 @@ void EmptyLinkFunctionForGeneratedCodeShootProjectile() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mesh_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mesh;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_projectileSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_projectileSpeed;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -70,10 +74,18 @@ void EmptyLinkFunctionForGeneratedCodeShootProjectile() {}
 		{ "ModuleRelativePath", "Actors/Projectiles/ShootProjectile.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShootProjectile_Statics::NewProp_mesh = { "mesh", nullptr, (EPropertyFlags)0x001000000008001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AShootProjectile, mesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AShootProjectile_Statics::NewProp_mesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AShootProjectile_Statics::NewProp_mesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShootProjectile_Statics::NewProp_mesh = { "mesh", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AShootProjectile, mesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AShootProjectile_Statics::NewProp_mesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AShootProjectile_Statics::NewProp_mesh_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AShootProjectile_Statics::NewProp_projectileSpeed_MetaData[] = {
+		{ "Category", "Shooting" },
+		{ "ModuleRelativePath", "Actors/Projectiles/ShootProjectile.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AShootProjectile_Statics::NewProp_projectileSpeed = { "projectileSpeed", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AShootProjectile, projectileSpeed), METADATA_PARAMS(Z_Construct_UClass_AShootProjectile_Statics::NewProp_projectileSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AShootProjectile_Statics::NewProp_projectileSpeed_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AShootProjectile_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootProjectile_Statics::NewProp_collision,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootProjectile_Statics::NewProp_mesh,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootProjectile_Statics::NewProp_projectileSpeed,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AShootProjectile_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AShootProjectile>::IsAbstract,
@@ -102,7 +114,7 @@ void EmptyLinkFunctionForGeneratedCodeShootProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AShootProjectile, 3038688917);
+	IMPLEMENT_CLASS(AShootProjectile, 3223851396);
 	template<> COSMOSARCADECPP_API UClass* StaticClass<AShootProjectile>()
 	{
 		return AShootProjectile::StaticClass();

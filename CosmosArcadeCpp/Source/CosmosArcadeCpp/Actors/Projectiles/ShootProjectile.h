@@ -25,7 +25,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shooting")
 	USphereComponent* collision;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shooting")
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Shooting")
 	UStaticMeshComponent* mesh;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shooting")
+	float projectileSpeed;
 
 };
