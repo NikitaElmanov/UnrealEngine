@@ -10,15 +10,15 @@ APlayerPawn::APlayerPawn()
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	pawnCollision = CreateAbstractDefaultSubobject<UBoxComponent>(TEXT("PawnCollision"));
+	pawnCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("PawnCollision"));
 	RootComponent = pawnCollision;
 
-	pawnMesh = CreateAbstractDefaultSubobject<UStaticMeshComponent>(TEXT("PawnMesh"));
+	pawnMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PawnMesh"));
 	pawnMesh->SetupAttachment(RootComponent);
 
-	pawnCamera = CreateAbstractDefaultSubobject<UCameraComponent>(TEXT("PawnCamera"));
+	pawnCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("PawnCamera"));
 
-	shootComponent = CreateAbstractDefaultSubobject<UShootComponent>(TEXT("ShootComponent"));
+	shootComponent = CreateDefaultSubobject<UShootComponent>(TEXT("ShootComponent"));
 
 }
 

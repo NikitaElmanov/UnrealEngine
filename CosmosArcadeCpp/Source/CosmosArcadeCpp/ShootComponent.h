@@ -19,6 +19,9 @@ struct FShootInfo
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
 	float angle;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shooting")
+	float damage;
 };
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )

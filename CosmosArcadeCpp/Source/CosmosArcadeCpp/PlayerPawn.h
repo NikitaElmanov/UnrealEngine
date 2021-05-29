@@ -3,7 +3,6 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
 #include "Components/BoxComponent.h"
-#include "GameFramework/SpringArmComponent.h"
 #include "ShootComponent.h"
 #include "Camera/CameraComponent.h"
 

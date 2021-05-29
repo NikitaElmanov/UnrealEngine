@@ -62,6 +62,10 @@ static struct FScriptStruct_CosmosArcadeCpp_StaticRegisterNativesFShootInfo
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_angle_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_angle;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_damage_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_damage;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -96,10 +100,18 @@ static struct FScriptStruct_CosmosArcadeCpp_StaticRegisterNativesFShootInfo
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_angle = { "angle", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FShootInfo, angle), METADATA_PARAMS(Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_angle_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_angle_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_damage_MetaData[] = {
+		{ "Category", "Shooting" },
+		{ "ModuleRelativePath", "ShootComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_damage = { "damage", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FShootInfo, damage), METADATA_PARAMS(Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_damage_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_damage_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FShootInfo_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_projectileClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_offset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_angle,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FShootInfo_Statics::NewProp_damage,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FShootInfo_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_CosmosArcadeCpp,
@@ -129,7 +141,7 @@ static struct FScriptStruct_CosmosArcadeCpp_StaticRegisterNativesFShootInfo
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FShootInfo_Hash() { return 3328672599U; }
+	uint32 Get_Z_Construct_UScriptStruct_FShootInfo_Hash() { return 1701522921U; }
 	DEFINE_FUNCTION(UShootComponent::execstopShooting)
 	{
 		P_FINISH;

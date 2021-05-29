@@ -8,14 +8,25 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FHitResult;
 #ifdef COSMOSARCADECPP_ShootProjectile_generated_h
 #error "ShootProjectile.generated.h already included, missing '#pragma once' in ShootProjectile.h"
 #endif
 #define COSMOSARCADECPP_ShootProjectile_generated_h
 
 #define CosmosArcadeCpp_Source_CosmosArcadeCpp_Actors_Projectiles_ShootProjectile_h_11_SPARSE_DATA
-#define CosmosArcadeCpp_Source_CosmosArcadeCpp_Actors_Projectiles_ShootProjectile_h_11_RPC_WRAPPERS
-#define CosmosArcadeCpp_Source_CosmosArcadeCpp_Actors_Projectiles_ShootProjectile_h_11_RPC_WRAPPERS_NO_PURE_DECLS
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_Actors_Projectiles_ShootProjectile_h_11_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execonProjectileOverlap);
+
+
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_Actors_Projectiles_ShootProjectile_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execonProjectileOverlap);
+
+
 #define CosmosArcadeCpp_Source_CosmosArcadeCpp_Actors_Projectiles_ShootProjectile_h_11_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAShootProjectile(); \

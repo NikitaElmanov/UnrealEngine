@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define COSMOSARCADECPP_PlayerPawn_generated_h
 
-#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_SPARSE_DATA
-#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_RPC_WRAPPERS
-#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_INCLASS_NO_PURE_DECLS \
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_SPARSE_DATA
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_RPC_WRAPPERS
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPlayerPawn(); \
 	friend struct Z_Construct_UClass_APlayerPawn_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(APlayerPawn)
 
 
-#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_INCLASS \
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesAPlayerPawn(); \
 	friend struct Z_Construct_UClass_APlayerPawn_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(APlayerPawn)
 
 
-#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_STANDARD_CONSTRUCTORS \
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API APlayerPawn(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APlayerPawn) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_ENHANCED_CONSTRUCTORS \
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API APlayerPawn(APlayerPawn&&); \
@@ -58,28 +58,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APlayerPawn); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APlayerPawn)
 
 
-#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_PRIVATE_PROPERTY_OFFSET
-#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_12_PROLOG
-#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_GENERATED_BODY_LEGACY \
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_PRIVATE_PROPERTY_OFFSET
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_11_PROLOG
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_PRIVATE_PROPERTY_OFFSET \
-	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_SPARSE_DATA \
-	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_RPC_WRAPPERS \
-	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_INCLASS \
-	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_STANDARD_CONSTRUCTORS \
+	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_PRIVATE_PROPERTY_OFFSET \
+	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_SPARSE_DATA \
+	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_RPC_WRAPPERS \
+	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_INCLASS \
+	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_GENERATED_BODY \
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_PRIVATE_PROPERTY_OFFSET \
-	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_SPARSE_DATA \
-	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_INCLASS_NO_PURE_DECLS \
-	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_15_ENHANCED_CONSTRUCTORS \
+	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_PRIVATE_PROPERTY_OFFSET \
+	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_SPARSE_DATA \
+	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_INCLASS_NO_PURE_DECLS \
+	CosmosArcadeCpp_Source_CosmosArcadeCpp_PlayerPawn_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

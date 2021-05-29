@@ -13,7 +13,6 @@ UShootComponent::UShootComponent()
 
 }
 
-
 // Called when the game starts
 void UShootComponent::BeginPlay()
 {
@@ -28,6 +27,8 @@ void UShootComponent::shoot()
 	for (FShootInfo shootInfo : shootInfos)
 	{
 		FActorSpawnParameters spawnParameters;
+		spawnParameters.Owner = GetOwner();
+		spawnParameters.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
 
 		FVector spawnLocation = 
 			GetOwner()->GetActorLocation()
@@ -37,7 +38,8 @@ void UShootComponent::shoot()
 		FRotator spawnRotation = GetOwner()->GetActorRotation();
 		spawnRotation.Add(0.f, shootInfo.angle, 0.f);
 
-		GetWorld()->SpawnActor<AShootProjectile>(shootInfo.projectileClass, spawnLocation, spawnRotation, spawnParameters);
+		AShootProjectile* projectile = GetWorld()->SpawnActor<AShootProjectile>(shootInfo.projectileClass, spawnLocation, spawnRotation, spawnParameters);
+		if (projectile) projectile->damage = shootInfo.damage;
 	}
 }
 

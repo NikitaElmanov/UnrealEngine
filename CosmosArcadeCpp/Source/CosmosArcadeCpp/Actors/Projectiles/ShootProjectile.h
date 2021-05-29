@@ -18,6 +18,9 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UFUNCTION()
+	void onProjectileOverlap(UPrimitiveComponent* overlappedComp, AActor* otherActor, UPrimitiveComponent* otherComp, int32 bodyIndex, bool sweep, const FHitResult& hit);
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -30,5 +33,8 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shooting")
 	float projectileSpeed;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shooting")
+	float damage;
 
 };

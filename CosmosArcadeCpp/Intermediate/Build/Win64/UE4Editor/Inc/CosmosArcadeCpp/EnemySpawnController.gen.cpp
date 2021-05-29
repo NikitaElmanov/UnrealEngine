@@ -16,7 +16,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemySpawnController() {}
 	COSMOSARCADECPP_API UScriptStruct* Z_Construct_UScriptStruct_FEnemySpawnInfo();
 	UPackage* Z_Construct_UPackage__Script_CosmosArcadeCpp();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
-	ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
+	COSMOSARCADECPP_API UClass* Z_Construct_UClass_AEnemyPawn_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FTransform();
 	COSMOSARCADECPP_API UClass* Z_Construct_UClass_UEnemySpawnController_NoRegister();
 	COSMOSARCADECPP_API UClass* Z_Construct_UClass_UEnemySpawnController();
@@ -85,7 +85,7 @@ static struct FScriptStruct_CosmosArcadeCpp_StaticRegisterNativesFEnemySpawnInfo
 		{ "ModuleRelativePath", "EnemySpawnController.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FEnemySpawnInfo_Statics::NewProp_enemyClass = { "enemyClass", nullptr, (EPropertyFlags)0x0014000000000015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FEnemySpawnInfo, enemyClass), Z_Construct_UClass_APawn_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FEnemySpawnInfo_Statics::NewProp_enemyClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEnemySpawnInfo_Statics::NewProp_enemyClass_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FEnemySpawnInfo_Statics::NewProp_enemyClass = { "enemyClass", nullptr, (EPropertyFlags)0x0014000000000015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FEnemySpawnInfo, enemyClass), Z_Construct_UClass_AEnemyPawn_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UScriptStruct_FEnemySpawnInfo_Statics::NewProp_enemyClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEnemySpawnInfo_Statics::NewProp_enemyClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FEnemySpawnInfo_Statics::NewProp_spawnTransform_MetaData[] = {
 		{ "Category", "Enemies" },
@@ -141,7 +141,7 @@ static struct FScriptStruct_CosmosArcadeCpp_StaticRegisterNativesFEnemySpawnInfo
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FEnemySpawnInfo_Hash() { return 2967114592U; }
+	uint32 Get_Z_Construct_UScriptStruct_FEnemySpawnInfo_Hash() { return 2777985542U; }
 	void UEnemySpawnController::StaticRegisterNativesUEnemySpawnController()
 	{
 	}
