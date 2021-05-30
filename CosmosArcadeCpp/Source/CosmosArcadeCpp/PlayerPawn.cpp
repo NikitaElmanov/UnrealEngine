@@ -1,6 +1,7 @@
 #include "PlayerPawn.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/InputComponent.h"
+#include "TimerManager.h"
 
 // Sets default values
 APlayerPawn::APlayerPawn() 
@@ -26,7 +27,6 @@ APlayerPawn::APlayerPawn()
 void APlayerPawn::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 // Called every frame
@@ -63,3 +63,25 @@ void APlayerPawn::onTouchPress(ETouchIndex::Type index, FVector touchLocation)
 	//UE_LOG(LogTemp, Log, TEXT("currentTouchLocation - %f - %f"), currentTouchLocation.X, currentTouchLocation.Y);
 	touching = true;
 }
+
+float APlayerPawn::TakeDamage(float damage, const FDamageEvent& damageEvent, AController* instigetor, AActor* damageCauser)
+{
+	if (!CanBeDamaged()) return 0.f;
+	
+	Super::TakeDamage(damage, damageEvent, instigetor, damageCauser);
+	onPawnDamaged.Broadcast();
+	return damage;
+}
+
+void APlayerPawn::recoverPawn_Implementation()
+{
+	shootComponent->startShooting();
+	SetActorEnableCollision(true);
+}
+
+void APlayerPawn::explodePawn_Implementation()
+{
+	shootComponent->stopShooting();
+	SetActorEnableCollision(false);
+}
+

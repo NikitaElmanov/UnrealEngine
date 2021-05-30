@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\CosmosArcadeCpp.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{562FF6C4-B821-4861-BE96-179308A9FF8E}</UniqueIdentifier>
+      <UniqueIdentifier>{9F16E88C-59C1-414C-89C7-1ACEFA0FBE03}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CosmosArcadeCpp.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{84E16987-859F-4547-AF22-A9B5148CB06E}</UniqueIdentifier>
+      <UniqueIdentifier>{DF235F0A-434B-44F6-8D43-17114ED9AE61}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\CosmosArcadeCpp">
-      <UniqueIdentifier>{16E6081B-7E52-4174-8C15-0FBD5E15BD50}</UniqueIdentifier>
+      <UniqueIdentifier>{0A31E164-A0B0-43D0-A555-E7787DF9E9DD}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CosmosArcadeCpp\CosmosArcadeCpp.Build.cs">
       <Filter>Source\CosmosArcadeCpp</Filter>
@@ -59,6 +59,12 @@
     <ClInclude Include="..\..\Source\CosmosArcadeCpp\EnemySpawnController.h">
       <Filter>Source\CosmosArcadeCpp</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\CosmosArcadeCpp\GameHealthComponent.cpp">
+      <Filter>Source\CosmosArcadeCpp</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CosmosArcadeCpp\GameHealthComponent.h">
+      <Filter>Source\CosmosArcadeCpp</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\CosmosArcadeCpp\HealthComponent.cpp">
       <Filter>Source\CosmosArcadeCpp</Filter>
     </ClCompile>
@@ -78,10 +84,10 @@
       <Filter>Source\CosmosArcadeCpp</Filter>
     </ClInclude>
     <Filter Include="Source\CosmosArcadeCpp\Actors">
-      <UniqueIdentifier>{79FE9F5E-160C-483A-826E-34DEBDE5A02E}</UniqueIdentifier>
+      <UniqueIdentifier>{6D79C04F-D078-4965-A641-009649BA2333}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\CosmosArcadeCpp\Actors\Projectiles">
-      <UniqueIdentifier>{3286FA0E-0FC8-41D6-8AC8-FD200C661F03}</UniqueIdentifier>
+      <UniqueIdentifier>{E460AECA-029D-43E4-9A0D-1C9EE77CF79B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\CosmosArcadeCpp\Actors\Projectiles\ShootProjectile.cpp">
       <Filter>Source\CosmosArcadeCpp\Actors\Projectiles</Filter>

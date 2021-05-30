@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyPawn() {}
 	COSMOSARCADECPP_API UClass* Z_Construct_UClass_AEnemyPawn();
 	ENGINE_API UClass* Z_Construct_UClass_APawn();
 	UPackage* Z_Construct_UPackage__Script_CosmosArcadeCpp();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	COSMOSARCADECPP_API UClass* Z_Construct_UClass_UShootComponent_NoRegister();
@@ -29,11 +30,21 @@ void EmptyLinkFunctionForGeneratedCodeEnemyPawn() {}
 		P_THIS->destroyPawn();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(AEnemyPawn::execonEnemyOverlap)
+	{
+		P_GET_OBJECT(AActor,Z_Param_overlapedActor);
+		P_GET_OBJECT(AActor,Z_Param_otherActor);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->onEnemyOverlap(Z_Param_overlapedActor,Z_Param_otherActor);
+		P_NATIVE_END;
+	}
 	void AEnemyPawn::StaticRegisterNativesAEnemyPawn()
 	{
 		UClass* Class = AEnemyPawn::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "destroyPawn", &AEnemyPawn::execdestroyPawn },
+			{ "onEnemyOverlap", &AEnemyPawn::execonEnemyOverlap },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -56,6 +67,42 @@ void EmptyLinkFunctionForGeneratedCodeEnemyPawn() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AEnemyPawn_destroyPawn_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AEnemyPawn_onEnemyOverlap_Statics
+	{
+		struct EnemyPawn_eventonEnemyOverlap_Parms
+		{
+			AActor* overlapedActor;
+			AActor* otherActor;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_overlapedActor;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_otherActor;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AEnemyPawn_onEnemyOverlap_Statics::NewProp_overlapedActor = { "overlapedActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EnemyPawn_eventonEnemyOverlap_Parms, overlapedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AEnemyPawn_onEnemyOverlap_Statics::NewProp_otherActor = { "otherActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(EnemyPawn_eventonEnemyOverlap_Parms, otherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AEnemyPawn_onEnemyOverlap_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AEnemyPawn_onEnemyOverlap_Statics::NewProp_overlapedActor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AEnemyPawn_onEnemyOverlap_Statics::NewProp_otherActor,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AEnemyPawn_onEnemyOverlap_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "EnemyPawn.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AEnemyPawn_onEnemyOverlap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AEnemyPawn, nullptr, "onEnemyOverlap", nullptr, nullptr, sizeof(EnemyPawn_eventonEnemyOverlap_Parms), Z_Construct_UFunction_AEnemyPawn_onEnemyOverlap_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AEnemyPawn_onEnemyOverlap_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AEnemyPawn_onEnemyOverlap_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AEnemyPawn_onEnemyOverlap_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AEnemyPawn_onEnemyOverlap()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AEnemyPawn_onEnemyOverlap_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -96,6 +143,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyPawn() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AEnemyPawn_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AEnemyPawn_destroyPawn, "destroyPawn" }, // 2868191141
+		{ &Z_Construct_UFunction_AEnemyPawn_onEnemyOverlap, "onEnemyOverlap" }, // 263711497
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemyPawn_Statics::Class_MetaDataParams[] = {
@@ -169,7 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyPawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemyPawn, 963768351);
+	IMPLEMENT_CLASS(AEnemyPawn, 1274081374);
 	template<> COSMOSARCADECPP_API UClass* StaticClass<AEnemyPawn>()
 	{
 		return AEnemyPawn::StaticClass();

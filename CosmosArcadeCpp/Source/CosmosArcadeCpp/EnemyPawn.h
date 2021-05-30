@@ -23,6 +23,9 @@ protected:
 	virtual void BeginPlay() override;
 
 	UFUNCTION()
+	void onEnemyOverlap(AActor* overlapedActor, AActor* otherActor);
+
+	UFUNCTION()
 	void destroyPawn();
 
 public:	

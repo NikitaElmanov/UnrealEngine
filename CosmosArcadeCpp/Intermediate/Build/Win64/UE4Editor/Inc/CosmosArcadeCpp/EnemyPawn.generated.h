@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 #ifdef COSMOSARCADECPP_EnemyPawn_generated_h
 #error "EnemyPawn.generated.h already included, missing '#pragma once' in EnemyPawn.h"
 #endif
@@ -16,12 +17,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define CosmosArcadeCpp_Source_CosmosArcadeCpp_EnemyPawn_h_15_SPARSE_DATA
 #define CosmosArcadeCpp_Source_CosmosArcadeCpp_EnemyPawn_h_15_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execdestroyPawn);
+	DECLARE_FUNCTION(execdestroyPawn); \
+	DECLARE_FUNCTION(execonEnemyOverlap);
 
 
 #define CosmosArcadeCpp_Source_CosmosArcadeCpp_EnemyPawn_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execdestroyPawn);
+	DECLARE_FUNCTION(execdestroyPawn); \
+	DECLARE_FUNCTION(execonEnemyOverlap);
 
 
 #define CosmosArcadeCpp_Source_CosmosArcadeCpp_EnemyPawn_h_15_INCLASS_NO_PURE_DECLS \

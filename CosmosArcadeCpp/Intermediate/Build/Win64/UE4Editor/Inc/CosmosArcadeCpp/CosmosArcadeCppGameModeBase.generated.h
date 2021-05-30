@@ -13,9 +13,32 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define COSMOSARCADECPP_CosmosArcadeCppGameModeBase_generated_h
 
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_11_DELEGATE \
+static inline void FGameOverEvent_DelegateWrapper(const FMulticastScriptDelegate& GameOverEvent) \
+{ \
+	GameOverEvent.ProcessMulticastDelegate<UObject>(NULL); \
+}
+
+
 #define CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_SPARSE_DATA
-#define CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_RPC_WRAPPERS
-#define CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_RPC_WRAPPERS \
+	virtual void recoverPawn_Implementation(); \
+	virtual void explodePawn_Implementation(); \
+ \
+	DECLARE_FUNCTION(execendGame); \
+	DECLARE_FUNCTION(execrecoverPawn); \
+	DECLARE_FUNCTION(execexplodePawn);
+
+
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execendGame); \
+	DECLARE_FUNCTION(execrecoverPawn); \
+	DECLARE_FUNCTION(execexplodePawn);
+
+
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_EVENT_PARMS
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_CALLBACK_WRAPPERS
 #define CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACosmosArcadeCppGameModeBase(); \
@@ -58,14 +81,21 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACosmosArcadeCppGameModeBase); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACosmosArcadeCppGameModeBase)
 
 
-#define CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_PRIVATE_PROPERTY_OFFSET
-#define CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_13_PROLOG
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__playerPawn() { return STRUCT_OFFSET(ACosmosArcadeCppGameModeBase, playerPawn); }
+
+
+#define CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_13_PROLOG \
+	CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_EVENT_PARMS
+
+
 #define CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_PRIVATE_PROPERTY_OFFSET \
 	CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_SPARSE_DATA \
 	CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_RPC_WRAPPERS \
+	CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_CALLBACK_WRAPPERS \
 	CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_INCLASS \
 	CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_STANDARD_CONSTRUCTORS \
 public: \
@@ -78,6 +108,7 @@ public: \
 	CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_PRIVATE_PROPERTY_OFFSET \
 	CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_SPARSE_DATA \
 	CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_CALLBACK_WRAPPERS \
 	CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_INCLASS_NO_PURE_DECLS \
 	CosmosArcadeCpp_Source_CosmosArcadeCpp_CosmosArcadeCppGameModeBase_h_16_ENHANCED_CONSTRUCTORS \
 private: \

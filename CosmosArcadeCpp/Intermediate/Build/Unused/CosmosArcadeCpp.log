@@ -1,12 +1,5 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++).
-  Building CosmosArcadeCppEditor...
-  Using Visual Studio 2019 14.28.29915 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 4 processes...
-    [1/4] EnemyPawn.cpp
-    [2/4] UE4Editor-CosmosArcadeCpp-0052.lib
-       Creating library C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Development\CosmosArcadeCpp\UE4Editor-CosmosArcadeCpp-0052.lib and object C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Development\CosmosArcadeCpp\UE4Editor-CosmosArcadeCpp-0052.exp
-    [3/4] UE4Editor-CosmosArcadeCpp-0052.dll
-       Creating library C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Development\CosmosArcadeCpp\UE4Editor-CosmosArcadeCpp-0052.suppressed.lib and object C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\UE4Editor\Development\CosmosArcadeCpp\UE4Editor-CosmosArcadeCpp-0052.suppressed.exp
-    [4/4] CosmosArcadeCppEditor.target
-  Total time in Parallel executor: 1,48 seconds
-  Total execution time: 2,34 seconds
+  Parsing headers for CosmosArcadeCppEditor
+    Running UnrealHeaderTool "C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\CosmosArcadeCpp.uproject" "C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\Intermediate\Build\Win64\CosmosArcadeCppEditor\Development\CosmosArcadeCppEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\79997\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+C:/Users/79997/Unreal Engine/Projects/CosmosArcadeC++/CosmosArcadeCpp/Source/CosmosArcadeCpp/PlayerPawn.h(75): error : Unknown function specifier 'BlueprinPure'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(46,5): error MSB3073: The command ""C:\Program Files\Epic Games\UE_4.26\Engine\Build\BatchFiles\Build.bat" CosmosArcadeCppEditor Win64 Development -Project="C:\Users\79997\Unreal Engine\Projects\CosmosArcadeC++\CosmosArcadeCpp\CosmosArcadeCpp.uproject" -WaitMutex -FromMsBuild" exited with code 6.

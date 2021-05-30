@@ -12,6 +12,10 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeCosmosArcadeCpp_init() {}
 	COSMOSARCADECPP_API UFunction* Z_Construct_UDelegateFunction_CosmosArcadeCpp_HealthEndedEvent__DelegateSignature();
+	COSMOSARCADECPP_API UFunction* Z_Construct_UDelegateFunction_CosmosArcadeCpp_HealthsEndedEvent__DelegateSignature();
+	COSMOSARCADECPP_API UFunction* Z_Construct_UDelegateFunction_CosmosArcadeCpp_HealthsChangedEvent__DelegateSignature();
+	COSMOSARCADECPP_API UFunction* Z_Construct_UDelegateFunction_CosmosArcadeCpp_PawnDamagedEvent__DelegateSignature();
+	COSMOSARCADECPP_API UFunction* Z_Construct_UDelegateFunction_CosmosArcadeCpp_GameOverEvent__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_CosmosArcadeCpp()
 	{
 		static UPackage* ReturnPackage = nullptr;
@@ -19,14 +23,18 @@ void EmptyLinkFunctionForGeneratedCodeCosmosArcadeCpp_init() {}
 		{
 			static UObject* (*const SingletonFuncArray[])() = {
 				(UObject* (*)())Z_Construct_UDelegateFunction_CosmosArcadeCpp_HealthEndedEvent__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_CosmosArcadeCpp_HealthsEndedEvent__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_CosmosArcadeCpp_HealthsChangedEvent__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_CosmosArcadeCpp_PawnDamagedEvent__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_CosmosArcadeCpp_GameOverEvent__DelegateSignature,
 			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/CosmosArcadeCpp",
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xD67B50E8,
-				0xAA64FB9A,
+				0x8988F163,
+				0x54F2A3C3,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);
